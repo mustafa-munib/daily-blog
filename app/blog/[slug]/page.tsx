@@ -32,6 +32,7 @@ function formatDate(dateString: any) {
 
 
 
+
 export default async function BlogArticle({
 	params,
 }: {
