@@ -21,14 +21,14 @@ async function getData(slug: string) {
 }
 
 // Function to format the date
-// function formatDate(dateString: any) {
-// 	const options: Intl.DateTimeFormatOptions = {
-// 		year: "numeric",
-// 		month: "long",
-// 		day: "numeric",
-// 	};
-// 	return new Date(dateString).toLocaleDateString(undefined, options);
-// }
+function formatDate(dateString: any) {
+	const options: Intl.DateTimeFormatOptions = {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	};
+	return new Date(dateString).toLocaleDateString(undefined, options);
+}
 
 
 
@@ -49,9 +49,9 @@ export default async function BlogArticle({
 				<span className='mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl'>
 					{data.title}
 				</span>
-				{/* <p className='text-center text-sm text-gray-500 dark:text-gray-400 mt-2'>
+				<p className='text-center text-sm text-gray-500 dark:text-gray-400 mt-2'>
 					Published on {formatDate(data._createdAt)}
-				</p> */}
+				</p>
 			</h1>
 
 			<Image

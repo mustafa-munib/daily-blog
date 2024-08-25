@@ -23,14 +23,14 @@ async function getData() {
 }
 
 // Function to format the date
-// function formatDate(dateString: any) {
-// 	const options: Intl.DateTimeFormatOptions = {
-// 		year: "numeric",
-// 		month: "long",
-// 		day: "numeric",
-// 	};
-// 	return new Date(dateString).toLocaleDateString(undefined, options);
-// }
+function formatDate(dateString: any) {
+	const options: Intl.DateTimeFormatOptions = {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	};
+	return new Date(dateString).toLocaleDateString(undefined, options);
+}
 
 
 export default async function Home() {
@@ -53,9 +53,9 @@ export default async function Home() {
 						/>
 
 						<CardContent className='mt-5'>
-							{/* <p className='text-sm text-gray-500 dark:text-gray-400'>
+							<p className='text-sm text-gray-500 dark:text-gray-400'>
 								Published on {formatDate(post._createdAt)}
-							</p> */}
+							</p>
 							<h3 className='text-lg line-clamp-2 font-bold'>{post.title}</h3>
 							<p className='line-clamp-3 text-sm mt-2 text-gray-600 dark:text-gray-300'>
 								{post.smallDescription}
