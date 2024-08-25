@@ -21,10 +21,15 @@ async function getData(slug: string) {
 }
 
 // Function to format the date
-function formatDate(dateString:any) {
-	const options = { year: "numeric", month: "long", day: "numeric" };
+function formatDate(dateString: any) {
+	const options: Intl.DateTimeFormatOptions = {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	};
 	return new Date(dateString).toLocaleDateString(undefined, options);
 }
+
 
 export default async function BlogArticle({
 	params,
