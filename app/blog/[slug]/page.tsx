@@ -41,7 +41,7 @@ export default async function BlogArticle({
 	const data: fullBlog = await getData(params.slug);
 
 	return (
-		<div className='mt-8'>
+		<div className='mt-8 flex flex-col items-center justify-center'>
 			<h1>
 				<span className='block text-base text-center text-primary font-semibold tracking-wide uppercase'>
 					Mustafa Hussaini - Blog
@@ -60,7 +60,7 @@ export default async function BlogArticle({
 				height={800}
 				alt='Title Image'
 				priority
-				className='rounded-lg mt-8 border'
+				className='rounded-lg mt-8 border-2  shadow-lg'
 			/>
 
 			<div className='mt-16 prose prose-blue prose-lg dark:prose-invert prose-li:marker:text-primary prose-a:text-primary'>

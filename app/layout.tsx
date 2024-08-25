@@ -28,7 +28,7 @@ export default function RootLayout({
 				>
 					<div className='w-full max-w-7xl mx-auto px-2'>
 						<Navbar />
-						<main className='max-w-2xl mx-auto p-4 '>{children}</main>
+						<main className=' '>{children}</main>
 						<Footer />
 					</div>
 				</ThemeProvider>

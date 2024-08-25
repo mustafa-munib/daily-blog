@@ -12,7 +12,7 @@ export default function Hero() {
 	};
 
 	return (
-		<section className='w-full max-w-4xl mx-auto px-4 py-16 text-center'>
+		<section className='w-full max-w-4xl mx-auto px-4 py-16 text-center mb-5'>
 			<h1 className='text-4xl font-bold mb-4'>
 				Welcome to Mustafa Hussaini Blog
 			</h1>

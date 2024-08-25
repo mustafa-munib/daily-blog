@@ -41,15 +41,15 @@ export default async function Home() {
 			<Hero />
 
 			<h1 className='text-2xl text-center font-semibold'>All Blogs</h1>
-			<div className='grid grid-cols-1 md:grid-cols-2 mt-5 gap-5'>
+			<div className='grid grid-cols-1 md:grid-cols-3 mt-5 gap-5'>
 				{data.map((post, idx) => (
-					<Card key={idx} className=''>
+					<Card key={idx} className='shadow-xl'>
 						<Image
 							src={urlFor(post.titleImage).url()}
 							alt='image'
 							width={500}
-							height={500}
-							className='rounded-t-lg h-[200px] object-cover'
+              height={400}
+							className='w-full rounded-t-lg  object-cover'
 						/>
 
 						<CardContent className='mt-5'>
